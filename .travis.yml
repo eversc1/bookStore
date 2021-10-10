@@ -5,5 +5,5 @@ jdk:
 deploy:
   provider: heroku
   skip_cleanup: true
-  api_key: 91996bdb-32d5-4ee0-9d5e-f42386befcd1
+  api_key: $HEROKU_TOKEN
   app: "everdes-bookstore"
