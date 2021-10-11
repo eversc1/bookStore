@@ -1,9 +1,15 @@
 language: java
+
+before_install:
+  - chmod +x gradlew
+
 jdk:
   - openjdk8
 
+script:
+  - ./gradlew check
+
 deploy:
   provider: heroku
-  skip_cleanup: true
   api_key: $HEROKU_TOKEN
   app: "everdes-bookstore"
